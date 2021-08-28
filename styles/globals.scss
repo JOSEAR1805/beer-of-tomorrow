@@ -112,3 +112,19 @@ a {
         border-color: #ab3052bf;
     }
 }
+ // CONTENT
+ .ant-layout-content {
+	min-height: 50%;
+	margin: 15px;
+	
+}
+
+// FOOTER
+.ant-layout-footer {
+    height: auto;
+    background: #fcf8f7;
+
+    .ant-list-item {
+        padding: 0px;
+    }
+}

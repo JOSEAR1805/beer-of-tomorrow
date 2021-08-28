@@ -1,4 +1,5 @@
 import { Layout, Row, Col } from 'antd';
+import FooterApp from './footer';
 import HeaderApp from './header';
 
 const { Content } = Layout;
@@ -16,7 +17,7 @@ const LayoutApp = (props) => {
                         { children }
                     </Content>
 
-                    
+                    <FooterApp />
                 </Col>
             </Row>
         </Layout>
