@@ -1,5 +1,11 @@
 @import "~antd/dist/antd.css";
 
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 html,
 body {
   padding: 0;
@@ -15,4 +21,94 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ant-layout-header {
+    height: auto;
+    background: #fcf8f7;
+    padding-top: 15px;
+    padding-bottom: 24px;
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .div-btns {
+        justify-content: flex-end;
+    }
+
+    .div-btn-menu {
+        display: none;
+    }
+
+    .btn-menu {
+        cursor: pointer;
+        padding: 10px;
+
+        &:hover {
+            color: #ab3052bf;
+        }
+    }
+    
+    @media (max-width: $breakpoint-md) {
+        padding: 15px;
+        
+        .center-menos-md {
+            text-align: center !important;
+        }
+
+        .div-btns {
+            justify-content: center;
+        }
+
+        .div-btn-menu {
+            display: block;
+        }
+
+        .nav-bar {
+            flex-direction: column !important;
+            display: none;
+        }
+    }
+}
+
+.dflex {
+    display: flex !important;
+}
+
+.ant-menu {
+    background: #fcf8f7;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: #ab3052bf;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+    border-bottom: 0px solid #ab3052bf;
+}
+
+.ant-menu-horizontal {
+    border-bottom: 1px solid #fcf8f7;
+}
+
+.ant-btn-primary {
+    border-color: #ab3052;
+    background: #ab3052;
+    
+    &:hover, :focus {
+        border-color: #ab3052bf;
+        background: #ab3052bf;
+    }
+}
+
+.ant-btn-background-ghost.ant-btn-primary {
+    color: #ab3052;
+    border-color: #ab3052;
+
+    &:hover, :focus {
+        color: #ab3052bf;
+        border-color: #ab3052bf;
+    }
 }

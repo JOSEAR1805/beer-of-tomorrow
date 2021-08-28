@@ -1,7 +1,9 @@
+import LayoutApp from "../src/components/layouts";
+
 export default function Home() {
     return (
-        <div>
+        <LayoutApp>
             <h1>Hola Mundo</h1>
-        </div>
+        </LayoutApp>
     )
 }
