@@ -207,6 +207,23 @@ a {
     }
 }
 
+.div-product-cart {
+    padding: 24px;
+    border: 1px solid #ccb28a;
+    border-radius: 5px;
+}
+
+.div-group {
+    .ant-btn {
+        max-width: 47px;
+
+        &:hover, :focus {
+            color: #ab3052bf;
+            border-color: #ab3052bf;
+        }
+    } 
+}
+
 // FOOTER
 .ant-layout-footer {
     height: auto;

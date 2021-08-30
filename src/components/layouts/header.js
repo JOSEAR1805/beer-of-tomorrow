@@ -47,14 +47,16 @@ const HeaderApp = (props) => {
                             >
                                 CONTACTO DIRECTO AQUÍ
                             </Button>
-                            <Button
-                                ghost
-                                type="primary"
-                                icon={<ShoppingCartOutlined />}
-                                size={"large"}
-                                style={{ marginLeft: "20px" }}
-                                onClick={() => this.enterLoading(2)}
-                            />
+                            <Link href="/cart">
+                                <Button
+                                    ghost
+                                    type="primary"
+                                    icon={<ShoppingCartOutlined />}
+                                    size={"large"}
+                                    style={{ marginLeft: "20px" }}
+                                />
+
+                            </Link>
                         </Col>
                     </Row>
                 </Col>

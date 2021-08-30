@@ -27,6 +27,14 @@ const ProductDetails = (props) => {
         {
             !loading &&
             <Row gutter={[16, 16]} className="div-product-details" justify="center">
+                <Col span={24} style={{paddingTop: "24px"}}>
+                    <Title level={3} className="title">Detalles de producto</Title>
+                </Col>
+
+                <Col span={20}>
+                    <Divider />
+                </Col>
+
                 <Col xs={24} sm={24} md={10} lg={10} className="details">
                     <Title level={2} className="title">{product.name}</Title>
                     <Title level={4} className="subtitle">Venta distribution</Title>
