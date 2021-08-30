@@ -29,7 +29,7 @@ const ShoppingCart = (props) => {
             {
                 shoppingCart &&
                 shoppingCart.map((item) => (
-                    <Col xs={24} sm={24} md={20} lg={18} >
+                    <Col key={item.id} xs={24} sm={24} md={20} lg={18} >
                         <CardProductCart product={item} />
                     </Col>
                 ))
