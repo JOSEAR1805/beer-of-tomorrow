@@ -33,7 +33,9 @@ const HeaderApp = (props) => {
                 <Col xs={24} sm={10} md={10} lg={8} >
                     <Row justify="center">
                         <Link href="/">
-                            <Image src="/images/logo.png" width={250} height={100} />
+                            <a>
+                                <Image src="/images/logo.png" width={250} height={100} />
+                            </a>
                         </Link>
                     </Row>
                 </Col>
@@ -48,14 +50,15 @@ const HeaderApp = (props) => {
                                 CONTACTO DIRECTO AQUÍ
                             </Button>
                             <Link href="/cart">
-                                <Button
-                                    ghost
-                                    type="primary"
-                                    icon={<ShoppingCartOutlined />}
-                                    size={"large"}
-                                    style={{ marginLeft: "20px" }}
-                                />
-
+                                <a>
+                                    <Button
+                                        ghost
+                                        type="primary"
+                                        icon={<ShoppingCartOutlined />}
+                                        size={"large"}
+                                        style={{ marginLeft: "20px" }}
+                                    />
+                                </a>
                             </Link>
                         </Col>
                     </Row>
@@ -76,7 +79,9 @@ const HeaderApp = (props) => {
                     <Menu.Item key="mail">
                         <Badge status="error" />
                         <Link href="/">
-                            Productos
+                            <a>
+                                Productos
+                            </a>
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="mail2">

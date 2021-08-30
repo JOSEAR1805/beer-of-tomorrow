@@ -1,7 +1,4 @@
-import { useEffect, useState } from 'react';
-import LayoutApp from "src/components/layouts";
-import ListProduct from 'src/components/listProducts';
-import axios from 'axios';
+import LayoutApp from "@components/layouts";
 import ShoppingCart from '@components/shoppingCart';
 
 const Cart = () => {
@@ -12,6 +9,5 @@ const Cart = () => {
         </LayoutApp>
     )
 }
-
 
 export default Cart;

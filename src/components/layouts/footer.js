@@ -12,7 +12,9 @@ const FooterApp = (props) => {
             <Row gutter={[16, 16]} style={{ marginBottom: "15px" }}>
                 <Col xs={24} sm={24} md={24} lg={6}>
                     <Link href="/">
-                        <Image src="/images/logo.png" width={250} height={100} />
+                        <a>
+                            <Image src="/images/logo.png" width={250} height={100} />
+                        </a>
                     </Link>
                 </Col>
                 <Col xs={24} sm={8} md={8} lg={6}>

@@ -1,7 +1,7 @@
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
-import LayoutApp from "src/components/layouts";
-import ProductDetails from "src/components/productDetails";
+import LayoutApp from "@components/layouts";
+import ProductDetails from "@components/productDetails";
 import axios from "axios";
 
 export default function Home() {
@@ -13,7 +13,6 @@ export default function Home() {
     const handleGetBeer = async () => {
         await axios.get(`https://api.punkapi.com/v2/beers/${query.idProduct}`)
             .then(response => {
-                console.log("useEffect", response)
                 const { status, data } = response;
                 status === 200 && setProduct(data[0])
             })
