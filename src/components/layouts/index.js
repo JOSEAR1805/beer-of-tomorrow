@@ -10,7 +10,7 @@ const LayoutApp = (props) => {
     return (
         <Layout style={{ minHeight: '100vh' }}>
             <Row justify="center">
-                <Col lg={24} xl={18}>
+                <Col lg={24} xl={18} style={{ background: "#fff" }}>
                     <HeaderApp {...props}/>
 
                     <Content style={{textAlign: "center"}}>

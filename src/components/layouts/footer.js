@@ -1,5 +1,6 @@
 import { Layout, Row, Col, Button, Typography, List } from 'antd';
 import Image from 'next/image'
+import Link from 'next/link'
 
 const { Title } = Typography;
 const { Footer } = Layout;
@@ -10,9 +11,11 @@ const FooterApp = (props) => {
         <Footer>
             <Row gutter={[16, 16]} style={{ marginBottom: "15px" }}>
                 <Col xs={24} sm={24} md={24} lg={6}>
-                    <Image src="/images/logo.png" width={250} height={100} />
+                    <Link href="/">
+                        <Image src="/images/logo.png" width={250} height={100} />
+                    </Link>
                 </Col>
-                <Col  xs={24} sm={8} md={8} lg={6}>
+                <Col xs={24} sm={8} md={8} lg={6}>
                     <Image src="/images/icon-location.png" width={25} height={25} />
                     <p>Neveria 4672, Las Condes, Región Metropolitana, Chile</p>
                 </Col>
@@ -40,7 +43,7 @@ const FooterApp = (props) => {
                             size={"medium"}
                             block
                         >
-                            BUTTOM 
+                            BUTTOM
                         </Button>
                         <small>Lorem ipsum es el texto que se usa habitualmente</small>
                     </Row>

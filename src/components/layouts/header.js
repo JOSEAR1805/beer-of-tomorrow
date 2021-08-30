@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Layout, Row, Col, Button, Divider, Menu, Badge } from 'antd';
 import { ShoppingCartOutlined, DownCircleOutlined, UpCircleOutlined } from '@ant-design/icons';
 import Image from 'next/image'
+import Link from 'next/link'
 
 const { Header } = Layout;
 
@@ -31,7 +32,9 @@ const HeaderApp = (props) => {
                 </Col>
                 <Col xs={24} sm={10} md={10} lg={8} >
                     <Row justify="center">
-                        <Image src="/images/logo.png" width={250} height={100} />
+                        <Link href="/">
+                            <Image src="/images/logo.png" width={250} height={100} />
+                        </Link>
                     </Row>
                 </Col>
                 <Col xs={24} sm={14} md={14} lg={8} >
@@ -62,29 +65,32 @@ const HeaderApp = (props) => {
                     <Row justify="center">
                         {
                             showNavBar ?
-                            <UpCircleOutlined className="btn-menu" onClick={() => setShowNavBar(false)} /> :
-                            <DownCircleOutlined className="btn-menu" onClick={() => setShowNavBar(true)}/>
+                                <UpCircleOutlined className="btn-menu" onClick={() => setShowNavBar(false)} /> :
+                                <DownCircleOutlined className="btn-menu" onClick={() => setShowNavBar(true)} />
                         }
                     </Row>
                 </Col>
                 <Menu className={`nav-bar ${showNavBar && "dflex"}`}>
                     <Menu.Item key="mail">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" />
+                        <Link href="/">
+                            Productos
+                        </Link>
                     </Menu.Item>
                     <Menu.Item key="mail2">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" /> Categorias
                     </Menu.Item>
                     <Menu.Item key="mail3">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" /> Almacen
                     </Menu.Item>
                     <Menu.Item key="mail4">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" /> Clientes
                     </Menu.Item>
                     <Menu.Item key="mail5">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" /> Soporte
                     </Menu.Item>
                     <Menu.Item key="mail6">
-                        <Badge status="error" /> Navigation One
+                        <Badge status="error" /> Contacto
                     </Menu.Item>
 
                 </Menu>
