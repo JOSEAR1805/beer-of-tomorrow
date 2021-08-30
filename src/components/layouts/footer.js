@@ -13,23 +13,23 @@ const FooterApp = (props) => {
                 <Col xs={24} sm={24} md={24} lg={6}>
                     <Link href="/">
                         <a>
-                            <Image src="/images/logo.png" width={250} height={100} />
+                            <Image src="/images/logo.png" alt="bot-logo" width={250} height={100} />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={24} sm={8} md={8} lg={6}>
-                    <Image src="/images/icon-location.png" width={25} height={25} />
+                    <Image src="/images/icon-location.png" alt="bot-location" width={25} height={25} />
                     <p>Neveria 4672, Las Condes, Región Metropolitana, Chile</p>
                 </Col>
                 <Col xs={24} sm={8} md={8} lg={4}>
-                    <Image src="/images/icon-phone.png" width={25} height={25} />
+                    <Image src="/images/icon-phone.png" alt="bot-phone" width={25} height={25} />
                     <List>
                         <List.Item>(58) 4324 534 534</List.Item>
                         <List.Item>(57) 42342 423423</List.Item>
                     </List>
                 </Col>
                 <Col xs={24} sm={8} md={8} lg={4}>
-                    <Image src="/images/icon-email.png" width={25} height={25} />
+                    <Image src="/images/icon-email.png" alt="bot-email" width={25} height={25} />
                     <List>
                         <List.Item>user@exmple.com</List.Item>
                         <List.Item>admin@example.com</List.Item>

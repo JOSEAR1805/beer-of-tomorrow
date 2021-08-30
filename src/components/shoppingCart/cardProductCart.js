@@ -35,7 +35,7 @@ const CardProductCart = (props) => {
         <Card hoverable >
             <Row justify="space-around" align="middle">
                 <Col xs={8} sm={8} md={2} lg={2}>
-                    <Image src={product.image_url} width={40} height={140} />
+                    <Image src={product.image_url} alt={`bot-${product.id}`} width={40} height={140} />
                 </Col>
                 <Col xs={16} sm={16} md={8} lg={8} style={{ textAlign: "left" }}>
                     <Title level={3} className="title">{product.name}</Title>

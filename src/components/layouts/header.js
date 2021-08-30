@@ -22,10 +22,10 @@ const HeaderApp = (props) => {
                             <a>TEXT</a>
                         </Col>
                         <Col span={5} style={{ paddingTop: "6px" }}>
-                            <Image src="/images/logo-vk.png" width={25} height={20} />
+                            <Image src="/images/logo-vk.png" alt="bot-vk" width={25} height={20} />
                         </Col>
                         <Col span={5} style={{ paddingTop: "8px" }}>
-                            <Image src="/images/logo-face.png" width={25} height={25} />
+                            <Image src="/images/logo-face.png" alt="bot-face" width={25} height={25} />
                         </Col>
                     </Row>
 
@@ -34,7 +34,7 @@ const HeaderApp = (props) => {
                     <Row justify="center">
                         <Link href="/">
                             <a>
-                                <Image src="/images/logo.png" width={250} height={100} />
+                                <Image src="/images/logo.png" alt="bot-logo" width={250} height={100} />
                             </a>
                         </Link>
                     </Row>

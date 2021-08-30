@@ -16,7 +16,7 @@ const CardProduct = (props) => {
                             <Title level={2} className="title">{product.name}</Title>
                         </Col>
                         <Col>
-                            <Image src={product.image_url} width={70} height={180} />
+                            <Image src={product.image_url} alt={`bot-${product.id}`} width={70} height={180} />
                         </Col>
                         <Col span={24}>
                             <Col className="div-litres">

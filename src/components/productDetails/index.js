@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Image from 'next/image';
 import { Row, Col, Typography, Button, Input, InputNumber, Divider } from 'antd';
@@ -7,7 +7,8 @@ import { addProduct } from '@redux/actions/gloabalActions';
 
 const { Title } = Typography;
 
-const ProductDetails = ({ product, loading }) => {
+const ProductDetails = (props) => {
+    const { loading, product } = props;
 
     const dispatch = useDispatch()
 
@@ -65,7 +66,7 @@ const ProductDetails = ({ product, loading }) => {
                                     Capacidad
                                 </Col>
                                 <Col span={12} className="two">
-                                    {/* {product.boil_volume.value} {product.boil_volume.unit} */}
+                                    {product.boil_volume.value} {product.boil_volume.unit}
                                 </Col>
                                 <Col span={12} className="one">
                                     Atenucion
@@ -118,7 +119,7 @@ const ProductDetails = ({ product, loading }) => {
                         <Col xs={24} sm={24} md={10} lg={10} className="image">
                             <Row className="center-image">
                                 <Col>
-                                    <Image src={product.image_url} width={150} height={400} />
+                                    <Image src={product.image_url} alt={`bot-${product.id}`} width={150} height={400} />
                                 </Col>
                             </Row>
                         </Col>
